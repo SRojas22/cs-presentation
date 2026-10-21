@@ -19,7 +19,6 @@ All the text is in `docs/index.html`. Every placeholder has been filled in. If y
 ## Photos (in `docs/photos/`)
 Already added from your site: `me.jpg`, `formation-netflix.jpg`, `moodmatcher.jpg`, `island.jpg`, `fifa.jpg`, `handtracker.jpg`.
 The Netflix slide (section 7) uses `nf-25.jpg`, `nf-building.jpg`, `nf-dream-team.jpg` and `nf-photobooth.jpg`. The My path slide (section 6) uses `init-logo.png`, `island.jpg` and `fifa.jpg`. To swap a graphic for a photo, add `path-undecided.jpg`, `path-criminal.jpg`, `path-finance.jpg` or `path-backend.jpg`. Other `nf-*.jpg` photos are kept in case you want them back.
-Optional: real artwork for the demo poster, saved as `art-romance.jpg`, `art-comedy.jpg`, `art-action.jpg`, `art-docs.jpg`.
 
 ## Particle shapes
 Each dark section picks a shape with `data-shape`: `sphere`, `ring`, `wave`, `helix`, `galaxy`, `rows`, or `text:ANY`.
