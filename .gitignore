@@ -1,16 +1,16 @@
 .DS_Store
 
 # Photos not used in the presentation (kept locally only)
-photos/formation-netflix.jpg
-photos/handtracker.jpg
-photos/image_pers.webp
-photos/init-logo.png
-photos/leadership.jpg
-photos/moodmatcher.jpg
-photos/nf-hallway.jpg
-photos/nf-hearts.jpg
-photos/nf-queens-cup.jpg
-photos/nf-speaker.jpg
-photos/nf-stage.jpg
-photos/personalization_image.webp
-photos/teaching.jpg
+docs/photos/formation-netflix.jpg
+docs/photos/handtracker.jpg
+docs/photos/image_pers.webp
+docs/photos/init-logo.png
+docs/photos/leadership.jpg
+docs/photos/moodmatcher.jpg
+docs/photos/nf-hallway.jpg
+docs/photos/nf-hearts.jpg
+docs/photos/nf-queens-cup.jpg
+docs/photos/nf-speaker.jpg
+docs/photos/nf-stage.jpg
+docs/photos/personalization_image.webp
+docs/photos/teaching.jpg
