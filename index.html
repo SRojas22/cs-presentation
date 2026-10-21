@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Susana Rojas — Computer Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-fun">
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div id="cursor" aria-hidden="true"><span class="dot"></span><span class="ring"></span></div>
+
+
+  <!-- HUD (blends over dark + light sections) -->
+  <header class="hud">
+    <a class="mono" href="#top" data-go="0">Susana Rojas <span class="dim">/ CS @ FIU</span></a>
+    <span class="mono"><span id="label">Hello</span> <span class="dim">—</span> <span id="cur">01</span><span class="dim">/<span id="total">00</span></span></span>
+  </header>
+  <nav class="rail" id="rail" aria-label="Sections"></nav>
+  <div class="scrollbar"><span id="bar"></span></div>
+
+  <main id="top">
+
+    <!-- ===================== INTRO: loads as you scroll ===================== -->
+    <div id="intro">
+      <div class="intro-pin">
+        <span class="mono">Susana Rojas — Computer Science</span>
+        <div class="intro-bottom">
+          <div class="intro-meta">
+            <span class="mono" id="intro-hint">Scroll to load</span>
+            <span class="intro-bar"><span id="intro-bar"></span></span>
+          </div>
+          <span id="intro-num" class="intro-num">000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== 01 HERO ===================== -->
+    <section class="sec dark hero" data-mode="fun" data-shape="sphere" data-px="0.2" data-label="Hello">
+      <div class="inner">
+        <p class="eyebrow r">Susana Rojas · Computer Science @ FIU</p>
+        <h1 class="display xxl split" data-speed="-0.15">Computer<br><span class="outline">Science</span></h1>
+        <p class="lead r">The major, the paths, and what it actually looks like from the inside.</p>
+        <p class="scroll-cue mono r"><span class="line"></span>Scroll or press →</p>
+      </div>
+      <aside class="notes">Introduce yourself in one line. Scroll or press → to continue.</aside>
+    </section>
+
+    <!-- ===================== 02 WHO I AM ===================== -->
+    <section class="sec dark" data-mode="fun" data-shape="text:HI" data-px="-0.28" data-dim="0.35" data-label="Who I am">
+      <div class="inner split2 about">
+        <figure class="photo tall r" data-src="photos/me.jpg" data-label="Photo of you" data-pos="center 30%"></figure>
+        <div>
+          <p class="eyebrow r">01 — Who I am</p>
+          <h2 class="display xl split">Hi, I'm Susana.</h2>
+          <dl class="kv">
+            <div class="r"><dt>Studying</dt><dd>B.S. Computer Science, minor in Math</dd></div>
+            <div class="r"><dt>School</dt><dd>Florida International University, Miami</dd></div>
+          </dl>
+        </div>
+      </div>
+      <aside class="notes">Keep it short.</aside>
+    </section>
+
+    <!-- ===================== 03 THE CYCLE ===================== -->
+    <section class="sec paper" data-mode="learn" data-label="What is CS?">
+      <div class="inner">
+        <p class="eyebrow r">02 — The basics</p>
+        <h2 class="display l r">What is computer science?</h2>
+        <p class="statement r">Solving problems with computers. In practice, most of the work follows this cycle.</p>
+        <div class="cycle-wrap r">
+          <ol class="cycle" id="cycle">
+            <li><span class="num">01</span><h3>Understand</h3><p>What's the problem, and who has it?</p></li>
+            <li><span class="num">02</span><h3>Design</h3><p>Plan the approach before writing code.</p></li>
+            <li><span class="num">03</span><h3>Build</h3><p>Write the code.</p></li>
+            <li><span class="num">04</span><h3>Test</h3><p>Find what's broken and fix it (debugging).</p></li>
+            <li><span class="num">05</span><h3>Ship</h3><p>Release it to real users.</p></li>
+            <li><span class="num">06</span><h3>Learn</h3><p>Measure what happened, then improve it.</p></li>
+          </ol>
+          <div class="loop" aria-hidden="true"><span class="mono">Repeat</span></div>
+        </div>
+      </div>
+      <aside class="notes">This is the same cycle at a class project, a startup, or Netflix. The loop never really ends.</aside>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track" data-marquee="1">Computer science — Areas — Careers — Computer science — Areas — Careers — Computer science — Areas — Careers — </div></div>
+    </section>
+
+    <!-- ===================== 04 AREAS + WORK ===================== -->
+    <section class="sec paper" data-mode="learn" data-label="Areas & jobs">
+      <div class="inner">
+        <p class="eyebrow r">03 — How CS is divided</p>
+        <h2 class="display l r">Areas and jobs</h2>
+        <ul class="areas">
+          <li class="r head"><span></span><span class="mono">Area</span><span class="mono">What it is</span><span class="mono">Common jobs</span></li>
+          <li class="r"><span class="num">01</span><b>Software</b><span>Websites, apps, and the servers behind them</span><span>Front-end, back-end, full-stack, mobile engineer</span></li>
+          <li class="r"><span class="num">02</span><b>AI &amp; Machine Learning</b><span>Systems that learn from data</span><span>ML engineer, research scientist</span></li>
+          <li class="r"><span class="num">03</span><b>Data</b><span>Collecting and making sense of huge amounts of information</span><span>Data scientist, data engineer, analyst</span></li>
+          <li class="r"><span class="num">04</span><b>Systems &amp; Cloud</b><span>The infrastructure that keeps everything running</span><span>Infrastructure, cloud, reliability engineer</span></li>
+          <li class="r"><span class="num">05</span><b>Security</b><span>Protecting systems and data</span><span>Security engineer, penetration tester</span></li>
+          <li class="r"><span class="num">06</span><b>Games &amp; Graphics</b><span>Games, 3D, animation, visual effects</span><span>Game developer, graphics engineer</span></li>
+          <li class="r"><span class="num">07</span><b>Human–Computer Interaction</b><span>How people use technology</span><span>UX engineer, product designer</span></li>
+          <li class="r"><span class="num">08</span><b>Theory &amp; Research</b><span>The math and ideas underneath it all</span><span>Researcher, professor</span></li>
+        </ul>
+        <p class="where r"><span class="mono">Where you can work</span> Tech companies · Startups · Research labs · Government · Hospitals · Banks · Sports teams · Film studios</p>
+      </div>
+      <aside class="notes">Point out that CS jobs exist in almost every industry, not just tech companies. Mention which row you're in.</aside>
+    </section>
+
+    <!-- ===================== 05 THE MAJOR ===================== -->
+    <section class="sec paper" data-mode="learn" data-label="The major">
+      <div class="inner">
+        <p class="eyebrow r">04 — The major</p>
+        <h2 class="display l r">What you study</h2>
+        <div class="split2 top">
+          <ul class="classes">
+            <li class="r"><b>Programming</b><span>Writing code in languages like Python, Java, and C++.</span></li>
+            <li class="r"><b>Data structures &amp; algorithms</b><span>How to organize information and solve problems efficiently. This is what most interviews test.</span></li>
+            <li class="r"><b>Math</b><span>Discrete math, calculus, statistics, and linear algebra.</span></li>
+            <li class="r"><b>Systems</b><span>How computers, operating systems, and networks work underneath.</span></li>
+            <li class="r"><b>Electives</b><span>AI, security, graphics, databases. This is where you pick a direction.</span></li>
+          </ul>
+          <div class="side">
+            <div class="box r"><span class="mono">My favorite class</span><p>Data Structures. It's where coding started to feel like real problem solving.</p></div>
+            <div class="box r"><span class="mono">My hardest class</span><p>Computer Architecture. I just pushed through it. Not every class clicks, and that's okay.</p></div>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">A degree is usually 4 years. You don't need to know how to code before you start.</aside>
+    </section>
+
+    <!-- ===================== MY PATH (one step at a time) ===================== -->
+    <section class="sec dark journey-sec" data-mode="fun" data-shape="wave" data-dim="0.4" data-label="My path">
+      <div class="jpin">
+        <div class="jhead">
+          <div>
+            <p class="eyebrow">05 — My path</p>
+            <h2 class="display l">How I got to CS</h2>
+          </div>
+          <span class="mono jcount"><span id="jcur">01</span><span class="dim"> / <span id="jtotal">07</span></span></span>
+        </div>
+
+        <div class="jstage" id="jstage">
+          <article class="jstep">
+            <div class="jcard"><span class="num">01</span><h3>Undecided</h3><p>I didn't know what I wanted to study.</p></div>
+            <figure class="jart" data-src="photos/path-undecided.jpg"><span class="glyph">?</span></figure>
+          </article>
+          <article class="jstep">
+            <div class="jcard"><span class="num">02</span><h3 class="nope">Criminal science</h3><p>My first plan. I figured out pretty quickly it wasn't my path.</p></div>
+            <figure class="jart" data-src="photos/path-criminal.jpg"><span class="glyph word nope">Criminal<br>science</span></figure>
+          </article>
+          <article class="jstep">
+            <div class="jcard"><span class="num">03</span><h3 class="nope">Finance</h3><p>My next plan.</p></div>
+            <figure class="jart" data-src="photos/path-finance.jpg"><span class="glyph nope">$</span></figure>
+          </article>
+          <article class="jstep init">
+            <div class="jcard"><span class="num">04</span><h3>An INIT event</h3><p>INIT is the tech club I'm in now, and I'm on the e-board. At one of their events I found out about CS, liked the design side, and started with no coding experience.</p></div>
+            <figure class="jart logo"><img src="photos/init.jpg" alt="INIT logo"></figure>
+          </article>
+          <article class="jstep">
+            <div class="jcard"><span class="num">05</span><h3>Projects</h3><p>I learned mostly by building things.</p></div>
+            <figure class="jart" data-src="photos/island.jpg"><span class="glyph">{ }</span></figure>
+          </article>
+          <article class="jstep">
+            <div class="jcard"><span class="num">06</span><h3>Two back-end jobs</h3><p>Small jobs, mostly back-end. I didn't really enjoy them. I wanted something closer to research.</p></div>
+            <figure class="jart" data-src="photos/path-backend.jpg"><span class="glyph code">GET /api/users<br>200 OK<br>POST /api/orders<br>201 Created</span></figure>
+          </article>
+          <article class="jstep">
+            <div class="jcard"><span class="num">07</span><h3>Machine learning</h3><p>Found ML, liked the path, and had a lot of fun with it.</p></div>
+            <figure class="jart" data-src="photos/fifa.jpg"><span class="glyph">ML</span></figure>
+          </article>
+        </div>
+
+        <div class="jbar" id="jbar"></div>
+      </div>
+      <aside class="notes">Scroll or press → to go one step at a time. Most people don't start with a clear plan. At step 4: if your school has a club like INIT, go to one event. Netflix comes on the next slide.</aside>
+    </section>
+
+    <!-- ===================== 06 NETFLIX ===================== -->
+    <section class="sec dark chapter" data-mode="fun" data-shape="rows" data-dim="0.45" data-label="Netflix">
+      <div class="inner">
+        <p class="eyebrow r">Part two — CS at a real company</p>
+        <h2 class="display xl split">This summer,<br>I interned at <span class="red">Netflix.</span></h2>
+        <p class="lead r">On Recommendation Systems. Here's what computer science looks like at a company that size.</p>
+        <dl class="nfstats">
+          <div class="r"><dt>16,000</dt><dd>full-time employees (end of 2025)</dd></div>
+          <div class="r"><dt>190+</dt><dd>countries</dd></div>
+          <div class="r"><dt>80%</dt><dd>of what people watch is found through recommendations</dd></div>
+        </dl>
+        <div class="pola-stack" data-speed="0.08">
+          <figure class="pola p1 r"><span class="photo" data-src="photos/nf-25.jpg" data-label="Netflix 25 wall"></span><figcaption class="mono">The 25 wall</figcaption></figure>
+          <figure class="pola p2 r"><span class="photo" data-src="photos/nf-building.jpg" data-label="Building E"></span><figcaption class="mono">Building E</figcaption></figure>
+          <figure class="pola p3 r"><span class="photo" data-src="photos/nf-dream-team.jpg" data-label="Desk" data-pos="center 35%"></span><figcaption class="mono">Summer 2026</figcaption></figure>
+          <figure class="pola p4 r"><span class="photo" data-src="photos/nf-photobooth.jpg" data-label="Photo booth"></span><figcaption class="mono">Intern photo booth</figcaption></figure>
+        </div>
+      </div>
+      <aside class="notes">Ask them to guess each number before you say it. Sources: Netflix 10-K (Dec 2025); Gomez-Uribe &amp; Hunt, ACM 2015.</aside>
+    </section>
+
+    <!-- ===================== 08 TEAMS (horizontal scroll) ===================== -->
+    <section class="sec paper hscroll" data-mode="learn" data-label="Teams">
+      <div class="pin">
+        <div class="pin-head">
+          <p class="eyebrow">06 — Inside the company</p>
+          <h2 class="display l">The engineering teams</h2>
+        </div>
+        <div class="track">
+          <article class="team mine"><span class="tag">My area</span><span class="num">01</span><h3>Recommendations &amp; Personalization</h3><p>Decides which rows and titles show up on your homepage, and in what order.</p></article>
+          <article class="team"><span class="num">02</span><h3>Front-end / UI</h3><p>The apps on TVs, phones, tablets, and the web.</p></article>
+          <article class="team"><span class="num">03</span><h3>Back-end &amp; Platform</h3><p>The services behind every click: search, profiles, playback, billing.</p></article>
+          <article class="team"><span class="num">04</span><h3>Streaming &amp; Open Connect</h3><p>Netflix's own network that stores video close to viewers so it doesn't buffer.</p></article>
+          <article class="team"><span class="num">05</span><h3>Encoding</h3><p>Compresses video so it looks good on fast and slow internet.</p></article>
+          <article class="team"><span class="num">06</span><h3>Live</h3><p>Live events like boxing, NFL games, and WWE, streamed to millions at once.</p></article>
+          <article class="team"><span class="num">07</span><h3>Games</h3><p>Netflix Games on phones and TVs.</p></article>
+          <article class="team"><span class="num">08</span><h3>Ads</h3><p>The technology behind the plan with ads.</p></article>
+          <article class="team"><span class="num">09</span><h3>Data Science &amp; Experimentation</h3><p>A/B tests that measure whether a change actually helps members.</p></article>
+          <article class="team"><span class="num">10</span><h3>Security</h3><p>Protects accounts, content, and systems.</p></article>
+          <article class="team"><span class="num">11</span><h3>Studio Tech</h3><p>Software used to produce the shows and movies themselves.</p></article>
+          <article class="team end"><h3>And more.</h3><p>Each of these is full of computer scientists.</p></article>
+        </div>
+      </div>
+      <aside class="notes">Front-end = what you see. Back-end = what makes it work. Then: Live, Games, Ads are newer areas. Then zoom into what my team does.</aside>
+    </section>
+
+    <!-- ===================== 09 IMAGE PERSONALIZATION ===================== -->
+    <section class="sec paper" data-mode="learn" data-label="My team's work">
+      <div class="inner split2 demo">
+        <div>
+          <p class="eyebrow r">07 — What my team works on</p>
+          <h2 class="display l r">Image personalization</h2>
+          <p class="body r">Every show has many possible images. A model predicts which one each person is most likely to click, based on what they've watched. Pick a viewer:</p>
+          <div class="viewers r" id="viewers">
+            <button data-img="2" class="on">Likes action &amp; adventure</button>
+            <button data-img="9">Likes horror</button>
+            <button data-img="6">Likes comedy</button>
+            <button data-img="8">Likes romance</button>
+            <button data-img="7">Likes sci-fi</button>
+            <button data-img="4">Likes drama</button>
+          </div>
+        </div>
+        <div class="r">
+          <div class="shown" id="shown"></div>
+          <p class="mono shown-label">What they see</p>
+          <div class="pool" id="pool"></div>
+          <p class="mono caption">All the images it can choose from · Netflix Tech Blog, "Artwork Personalization at Netflix" (2017)</p>
+        </div>
+      </div>
+      <aside class="notes">Click through the viewers. Same show every time, different image. Ask which one would make them click. Be clear: this is my team's work, not my own project.</aside>
+    </section>
+
+    <!-- ===================== 12 WHAT PEOPLE DON'T TELL YOU ===================== -->
+    <section class="sec paper" data-mode="learn" data-label="Unspoken">
+      <div class="inner">
+        <p class="eyebrow r">08 — Honestly</p>
+        <h2 class="display l r one-line">What people don't tell you about CS</h2>
+        <ul class="truths">
+          <li class="r"><h3>LeetCode</h3><p>Most software interviews include timed coding problems. It's a separate skill from your classes, and most people practice it for months.</p><p class="mine"><span class="mono">My experience</span> I practiced steadily for months before my interviews.</p></li>
+          <li class="r"><h3>Vibe coding</h3><p>AI tools can write a lot of code now. You still have to understand it to review it, fix it, and notice when it's wrong.</p><p class="mine"><span class="mono">My experience</span> I use it a lot, and the industry uses it even more. But the code is only as good as the engineer: it can make a good engineer exceptional, and make a weak one look even worse.</p></li>
+          <li class="r"><h3>Recruiting starts early</h3><p>Summer internships often open the fall before, sometimes a full year ahead.</p><p class="mine"><span class="mono">My experience</span> For me it came through the Netflix × Formation fellowship and networking.</p></li>
+          <li class="r"><h3>Rejection is normal</h3><p>Most applications get no response. Everyone you admire has a pile of rejections.</p><p class="mine"><span class="mono">My experience</span> Lots of no's. I kept trying.</p></li>
+          <li class="r"><h3>Classes aren't enough</h3><p>Projects, clubs, hackathons, and programs often matter as much as grades.</p><p class="mine"><span class="mono">My experience</span> What helped me most: INIT and other clubs, projects, and the community around me.</p></li>
+          <li class="r"><h3>Feeling behind</h3><p>Almost everyone feels like they know less than the people around them.</p><p class="mine"><span class="mono">My experience</span> I started with no coding experience while others had years. I caught up by building projects.</p></li>
+        </ul>
+      </div>
+      <aside class="notes">This is the most personal part. Spend time here.</aside>
+    </section>
+
+    <!-- ===================== GET STARTED ===================== -->
+    <section class="sec dark" data-mode="fun" data-shape="ring" data-dim="0.35" data-label="Get started">
+      <div class="inner">
+        <p class="eyebrow r">09 — Getting started</p>
+        <h2 class="display xl split">What you can do now</h2>
+        <div class="starts">
+          <div class="r"><span class="mono">At school</span><h3>Take a class</h3><p>AP Computer Science Principles or AP CS A if your school offers them. Join or start a coding or robotics club.</p></div>
+          <div class="r"><span class="mono">On your own</span><h3>Learn a language</h3><p>Python is a good first one. Free options: Harvard's CS50, freeCodeCamp, Khan Academy.</p></div>
+          <div class="r"><span class="mono">With other people</span><h3>Build things</h3><p>Hackathons, summer programs like Girls Who Code, and small projects you actually care about.</p></div>
+          <div class="r"><span class="mono">Ask for help</span><h3>Find a mentor</h3><p>Someone a few steps ahead of you: a teacher, an older student, someone from a club. Having one really helps.</p></div>
+        </div>
+        <p class="sub r"><span class="mono red">What I wish I'd done in high school</span><br>Tried coding earlier. Even something small, just to know if I liked it.</p>
+      </div>
+      <aside class="notes">Point out that most of this is free.</aside>
+    </section>
+
+    <!-- ===================== 13 END ===================== -->
+    <section class="sec dark end" data-mode="fun" data-shape="text:?" data-dim="0.5" data-label="Questions">
+      <div class="inner center">
+        <p class="eyebrow r">Thank you</p>
+        <h2 class="display xxl split">Questions?</h2>
+      </div>
+      <aside class="notes">Open the floor.</aside>
+    </section>
+
+  </main>
+
+  <div id="notes" class="notes-panel" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
